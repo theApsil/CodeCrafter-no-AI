@@ -12,6 +12,7 @@ def generate_code(task_type: str, params: Tuple[str, ...]) -> str:
     :param params: Кортеж параметров, извлечённых из шаблона
     :return: Строка с сгенерированным кодом (на Python или Rust).
     """
+    
     lang = params[-1]
 
     if lang == "python":
