@@ -11,7 +11,7 @@ def normalize_text(text: str) -> str:
     Приводит текст к унифицированной форме на основе словаря синонимов.
     
     :param text: Исходный текст для нормализации.
-    :return: Нормализованный текст, в котором ключевые слова заменены на базовые.
+    :return: Нормализованный текст.
     """
     text = text.lower().strip()
     for task_type, keywords in SYNONYMS.items():
